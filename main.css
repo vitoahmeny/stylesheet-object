@@ -1,0 +1,11 @@
+.container { box-sizing: border-box; display: flex; flex-direction: row; }
+.column { box-sizing: border-box; border: 1px solid hotpink; min-width:28em; flex-grow: 1; }
+.left { margin-right: 2em; }
+.center { flex-grow: 2; }
+.right { margin-left: 2em; }
+@media screen and (max-width: 768px) {
+    .container { display: block; }
+    .column { margin-bottom: 1em; }
+    .left { margin-right: 0; }
+    .right { margin-left: 0; }
+}
